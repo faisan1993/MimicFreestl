@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <style>
+        .image-mapper-shape {
+            fill: rgba(0, 0, 0, 0);
+            transition: all 0.3s ease;
+        }
+
+        g:hover .image-mapper-shape {
+            stroke: #fbbf24;
+            stroke-width: 3px;
+            fill: rgba(251, 191, 36, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b to-[#c4b39d] from-[#827467] min-h-screen font-serif">
+    <!-- Header -->
+    <div class="w-full text-center py-8 px-4 bg-gradient-to-r from-amber-50 to-yellow-100 border-b-4 border-amber-600 shadow-lg">
+      <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold text-amber-900 mb-2 tracking-wide uppercase drop-shadow-md">
+          The Insatiable Mimic of Greed
+        </h1>
+        <p class="text-xl text-amber-800 font-semibold italic">
+          A Free Sample of a 3D Figure for Role-Playing Realms
+        </p>
+      </div>
+    </div>
+
+    <!-- Hero Section  PARA CAMBIAR EL FONDO CAMBIAR LA URL DEL FINAL (con la ruta a tu carpeta EJEMPLO: bg-[url('example.png')]) -->
+    <section class="relative w-full h-[60vh] bg-cover bg-center flex items-center flex-col justify-center text-center bg-[url('gray.jpg')]">
+      <div class="mb-4">
+        <img src="logo.png" class="max-w-40" alt="">
+      </div>
+
+      <div class="bg-black/60 p-8 rounded-xl shadow-2xl">
+        <h1 class="text-5xl md:text-6xl font-bold text-amber-100 mb-4 drop-shadow-lg">
+          Beware the Mimic
+        </h1>
+        <p class="text-lg md:text-xl text-amber-200 font-medium italic">
+          Not all treasures bring fortune...
+        </p>    
+      </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto mt-14">
+        <div class="grid lg:grid-cols-3 gap-8">
+            
+            <!-- Left Column - Creature Lore -->
+            <div class="lg:col-span-1 space-y-6">
+                <!-- Description -->
+                <div class="bg-gradient-to-br from-yellow-50 to-amber-50 border-3 border-amber-500 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h2 class="text-2xl font-bold text-amber-900 mb-4">
+                        Bestiary Entry
+                    </h2>
+                    <p class="text-amber-800 leading-relaxed font-medium">
+                        The Insatiable Mimic of Greed is a creature steeped in legend, a vile entity that assumes the guise of treasure chests to ensnare unwary adventurers. Its lust for gold is matched only by its hunger for flesh.
+                    </p>
+                </div>
+
+                <!-- Statistics -->
+                <div class="bg-gradient-to-br from-yellow-50 to-amber-50 border-3 border-amber-500 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-amber-900 mb-4">
+                        Vital Statistics
+                    </h3>
+                    <div class="bg-amber-100 border-2 border-amber-400 rounded-lg p-4">
+                        <div class="grid grid-cols-2 gap-3 text-sm font-semibold">
+                            <div class="text-amber-800 bg-white rounded px-2 py-1">
+                                <strong class="text-amber-900">AC:</strong> 17
+                            </div>
+                            <div class="text-amber-800 bg-white rounded px-2 py-1">
+                                <strong class="text-amber-900">HP:</strong> 85
+                            </div>
+                            <div class="text-amber-800 bg-white rounded px-2 py-1">
+                                <strong class="text-amber-900">Speed:</strong> 15 ft
+                            </div>
+                            <div class="text-amber-800 bg-white rounded px-2 py-1">
+                                <strong class="text-amber-900">CR:</strong> 5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Info -->
+                <div class="bg-gradient-to-br from-yellow-50 to-amber-50 border-3 border-amber-500 rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-bold text-amber-900 mb-4">
+                        Crafted for Fifth Edition
+                    </h3>
+                    <p class="text-amber-800 text-sm mb-4 font-medium">Optimized for 3D printing</p>
+                    <div class="flex justify-center space-x-2 text-xs font-bold">
+                        <span class="bg-amber-200 text-amber-900 px-3 py-1 rounded-full border border-amber-400">28mm Scale</span>
+                        <span class="bg-amber-200 text-amber-900 px-3 py-1 rounded-full border border-amber-400">STL Format</span>
+                        <span class="bg-green-200 text-green-900 px-3 py-1 rounded-full border border-green-400">Free Download</span>
+                        <span class="bg-red-200 text-red-900 px-3 py-1 rounded-full border border-red-400">Antonio</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Column - Model Preview -->
+            <div class="lg:col-span-2">
+                <div class="bg-gradient-to-br from-yellow-50 to-amber-50 border-4 border-amber-600 rounded-xl shadow-2xl p-6 hover:shadow-3xl transition-shadow duration-300">
+                    <div class="text-center mb-6">
+                        <h2 class="text-3xl font-bold text-amber-900 mb-2">
+                            3D Model Preview
+                        </h2>
+                        <p class="text-amber-700 font-medium">Click below to claim the STL artifact</p>
+                    </div>
+                    
+                    <div class="relative hover:scale-105 transition-transform duration-500">
+                        <!-- Image Map Generated by https://www.fla-shop.com/image-map/ -->
+                        <svg style="width:100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2362 1417">
+                          <style>
+                          .image-mapper-shape {
+                              fill: rgba(0, 0, 0, 0);
+                          }
+                          g:hover .image-mapper-shape {
+                              stroke: white;
+                              stroke-width: 2px;
+                              opacity: 20%;
+                          }
+                          </style>
+                          <image xlink:href="Free_stl3.png" style="width: 2362px;"></image>
+                          <!-- CAMBIAR RUTA: CON LA DE DESCARGA -->
+                          <a xlink:href="https://colegiolitterator.com/" target="_blank" xlink:title="FreeStl">
+                          <g>
+                          <rect x="71.77967711301045" y="1137.2592592592594" width="639.2877492877492" height="174.96296296296282" class="image-mapper-shape" data-index="1"></rect>
+                          </g>
+                          </a>
+                        </svg>
+                    </div>
+                    
+                    <div class="text-center mt-6 space-y-2">
+                        <p class="text-amber-700 font-bold text-lg">
+                            Immediate Download Available
+                        </p>
+                        <p class="text-amber-600 font-medium">
+                            High-resolution STL file • Ready to print • No supports required
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full bg-gradient-to-r from-[#c4b39d] to-[#827467] border-t-4 border-amber-700 mt-16 shadow-inner">
+      <div class="max-w-7xl mx-auto px-6 py-10 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-amber-100 mb-4 tracking-wide">
+          Forged for Adventurers and Dungeon Masters Alike
+        </h2>
+        <p class="text-amber-200 text-base md:text-lg italic">
+          May your quests be perilous, your maps well-worn, and your dice ever merciful.
+        </p>
+        <div class="mt-6 flex justify-center space-x-4 text-sm text-amber-300">
+          <span>© 2025 Arcane Miniatures</span>
+          <span>|</span>
+          <span>Designed in the Realm</span>
+          <span>|</span>
+          <span>Compatible with 5e</span>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
